@@ -1,0 +1,92 @@
+{
+  "editor.fontSize": 16,
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 2,
+  "files.autoSave": "off",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    "plugins": [
+      "html"
+    ]
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "beautify.config": {
+    "editorconfig": true,
+    "indent_size": 2,
+    "wrap_attributes": "force-aligned",
+    "wrap_attributes_indent_size": 2,
+    "wrap_line_length": 80
+  },
+  "beautify.language": {
+    "html": [
+      "htm",
+      "html"
+    ]
+  },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "editorconfig": true,
+      "indent_size": 2,
+      "wrap_attributes": "force-aligned",
+      "wrap_attributes_indent_size": 2,
+      "wrap_line_length": 80
+    }
+  },
+  "attrsSorter.order": [
+    "is",
+    "v-for",
+    "v-if",
+    "v-else-if",
+    "v-else",
+    "v-show",
+    "v-cloak",
+    "v-once",
+    "v-pre",
+    "id",
+    "ref",
+    "key",
+    "slot",
+    "v-model",
+    "v-model.+",
+    "v-bind",
+    "v-bind.+",
+    ":.+",
+    "v-text",
+    "v-text.+",
+    "v-html",
+    "v-html.+",
+    "class",
+    "v-on.+",
+    "@.+",
+    "name",
+    "data-.+",
+    "ng-.+",
+    "src",
+    "for",
+    "type",
+    "href",
+    "values",
+    "title",
+    "alt",
+    "role",
+    "aria-.+",
+    "$unknown$"
+  ],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}
