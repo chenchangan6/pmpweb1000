@@ -1,63 +1,49 @@
 <template>
-  <section class="container">
+
+  <div>
+    <h1>系统路由表</h1>
+
     <div>
-      <app-logo/>
-      <h1 class="title">
-        pmpweb1000
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/"
-           target="_blank"
-           class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js"
-           target="_blank"
-           class="button--grey">GitHub</a>
-      </div>
+      <ol>
+        <li>
+          <div> 后台管理</div>
+          <ul>
+            <li v-for="a in links">
+              <nuxt-link :to="a.link"
+                         class="listname">{{a.name}}</nuxt-link>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
     </div>
-  </section>
+  </div>
+
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import PmpLogo from '~/components/PmpLogo.vue'
 
 export default {
-	components: {
-		AppLogo
-	}
+  components: {
+    PmpLogo
+  },
+  data() {
+    return {
+      message: '系统路由导航表',
+      host: 'http://127.0.0.1:3000/',
+      links: [
+        {
+          name: '用户登录',
+          link: 'backstage/login'
+        }
+      ]
+    }
+  }
 }
 </script>
-
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.listname {
+  font-size: 0.7em;
 }
 </style>

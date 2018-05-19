@@ -6,7 +6,8 @@
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -15,8 +16,48 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+body {
+  font-size: 2em;
+  font-weight: lighter;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-*, *:before, *:after {
+a {
+  color: #444444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a7734;
+  text-decoration: #3a7734;
+  font-weight: bolder;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.explain {
+  font-size: 0.5em;
+}
+
+.headtitle {
+  font-weight: 100;
+  text-align: center;
+}
+
+li {
+  padding: 0.1em;
+}
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
