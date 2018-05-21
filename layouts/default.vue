@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="content">
     <nuxt/>
   </div>
 </template>
@@ -16,7 +16,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-body {
+#content {
   font-size: 2em;
   font-weight: lighter;
   position: absolute;

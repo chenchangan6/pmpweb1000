@@ -8,11 +8,12 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
+    jsx: true
   },
   extends: 'eslint:recommended',
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html', 'json'
   ],
   // check if imports actually resolve
   'settings': {

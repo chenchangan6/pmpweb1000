@@ -51,7 +51,8 @@ module.exports = {
     }
   },
   vender: [
-    'element-ui'
+    'element-ui',
+    'axios'
   ],
   babel: {
     'plugins': [

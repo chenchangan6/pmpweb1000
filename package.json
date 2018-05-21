@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "ajv": "^6.5.0",
+    "axios": "^0.18.0",
     "element-ui": "^2.3.9",
     "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-json": "^1.2.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

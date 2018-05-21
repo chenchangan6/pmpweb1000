@@ -1,6 +1,7 @@
 <template>
 
   <div>
+    <pmp-logo></pmp-logo>
     <h1>系统路由表</h1>
 
     <div>
