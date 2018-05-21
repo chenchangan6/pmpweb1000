@@ -13,30 +13,33 @@
 
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios'
 export default {
   data() {
     return {
-      key1: "username",
-      key2: "pwd",
-      phonenumber: "",
-      pwd: ""
-    };
+      phonenumber: '',
+      pwd: ''
+    }
   },
   computed: {
     userinfo() {
-      return { username: this.phonenumber, phonenumber: this.pwd };
+      return { username: this.phonenumber, pwd: this.pwd }
     }
   },
 
   methods: {
     login() {
-      console.log(this.userinfo);
+      console.log(this.userinfo, this.$store.state.config[0].login)
       axios.post(this.$store.state.config[0].login, this.userinfo).then(res => {
-        console.log(res.data);
-        this.zhucemesages = res.data.code + res.data.messages;
-      });
+        console.log(res.data)
+
+        if (res.data.code === '200') {
+          this.$router.push({ path: '/backstage/' })
+        } else {
+          console.log(res.data.message)
+        }
+      })
     }
   }
-};
+}
 </script>
