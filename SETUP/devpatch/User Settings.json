@@ -9,12 +9,12 @@
     "html",
     {
       "language": "vue",
-      "autoFix": true
+      "autoFix": false
     }
   ],
   "eslint.options": {
     "plugins": [
-      "html"
+      "html", "json"
     ]
   },
   "editor.quickSuggestions": {
@@ -23,7 +23,7 @@
     "strings": true
   },
   "prettier.eslintIntegration": true,
-  "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": false,
   "beautify.config": {
     "editorconfig": true,
     "indent_size": 2,
@@ -34,7 +34,8 @@
   "beautify.language": {
     "html": [
       "htm",
-      "html"
+      "html",
+      "json"
     ]
   },
   "vetur.validation.template": false,
@@ -48,46 +49,6 @@
       "wrap_line_length": 80
     }
   },
-  "attrsSorter.order": [
-    "is",
-    "v-for",
-    "v-if",
-    "v-else-if",
-    "v-else",
-    "v-show",
-    "v-cloak",
-    "v-once",
-    "v-pre",
-    "id",
-    "ref",
-    "key",
-    "slot",
-    "v-model",
-    "v-model.+",
-    "v-bind",
-    "v-bind.+",
-    ":.+",
-    "v-text",
-    "v-text.+",
-    "v-html",
-    "v-html.+",
-    "class",
-    "v-on.+",
-    "@.+",
-    "name",
-    "data-.+",
-    "ng-.+",
-    "src",
-    "for",
-    "type",
-    "href",
-    "values",
-    "title",
-    "alt",
-    "role",
-    "aria-.+",
-    "$unknown$"
-  ],
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": false
 }
