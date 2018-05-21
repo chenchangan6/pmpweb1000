@@ -7,7 +7,8 @@ const createstore = () => new Vuex.Store({
   state: {
     config: [{
       baseapiurl: 'https://api.pmptiku.com',
-      login: 'http://127.0.0.1:5000/users/login'
+      // baseapiurl: 'https://api.pmptiku.com',
+      login: 'https://api.pmptiku.com/users/login'
     }]
 
   },
