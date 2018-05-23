@@ -27,13 +27,45 @@
                  :blocklognumber=list.blocklognumber></backlog>
       </el-col>
     </el-row>
-
+    <!-- 趋势图表 -->
+    <el-row :gutter="58">
+      <el-col :span="12">
+        <div class="chars">
+          <charlsline id="1"></charlsline>
+        </div>
+      </el-col>
+      <el-col :span="12">
+        <div class="chars">
+          <charlsline2 id="2"></charlsline2>
+        </div>
+      </el-col>
+    </el-row>
+    <el-row :gutter="58">
+      <el-col :span="12">
+        <div class="chars">
+          <charlsline2 id="3"></charlsline2>
+        </div>
+      </el-col>
+      <el-col :span="12">
+        <div class="chars">
+          <charlsline id="4"></charlsline>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
 import sumandnewbox from '~/components/backstage/statistics/sumandnewbox'
 import backlog from '~/components/statistics/backlog'
+import charlsline from '~/components/backstage/statistics/charlsline'
+import charlsline2 from '~/components/backstage/statistics/charlsline2'
 export default {
+  components: {
+    sumandnewbox,
+    backlog,
+    charlsline,
+    charlsline2
+  },
   data() {
     return {
       statistics: [
@@ -98,14 +130,15 @@ export default {
       ]
     }
   },
-  components: {
-    sumandnewbox,
-    backlog
-  },
   layout: 'backstage/default'
 }
 </script>
 <style scoped>
+.chars{
+  background: white;
+  width: 580px;
+  height: 340px;
+}
 .el-row {
   margin-bottom: 20px;
 }
