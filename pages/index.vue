@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <pmp-logo></pmp-logo>
+    <pmplogo></pmplogo>
     <h1>系统路由表</h1>
 
     <div>
@@ -23,11 +23,10 @@
 </template>
 
 <script>
-import PmpLogo from '~/components/PmpLogo.vue'
-
+import Pmplogo from '~/components/PmpLogo'
 export default {
   components: {
-    PmpLogo
+    Pmplogo
   },
   data() {
     return {
@@ -37,6 +36,10 @@ export default {
         {
           name: '用户登录',
           link: 'backstage/login'
+        },
+        {
+          name: '后台管理首页',
+          link: 'backstage/'
         }
       ]
     }
