@@ -1,5 +1,5 @@
 <template>
-  <img src="~/static/images/svg/PMPlogo.svg">
+  <img id="logo" src="~/static/images/svg/PMPlogo.svg">
 </template>
 <style scoped>
 img {
