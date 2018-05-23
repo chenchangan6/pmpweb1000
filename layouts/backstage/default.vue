@@ -1,13 +1,33 @@
+  <!-- 这是后台模板 -->
 <template>
   <div id="app">
-
-    <nuxt-link to="/"
-               class="shangfu">返回根目录</nuxt-link>
-    <!-- 这是后台模板 -->
-    <nuxt/>
+    <el-container>
+      <el-aside style="width:220px;">
+        <sidebar></sidebar>
+      </el-aside>
+      <el-container>
+        <el-header style="width:1260px;border-right:solid 1px #ebeef5">
+          <topbar></topbar>
+        </el-header>
+        <el-main style="width:1260px;">
+          <nuxt/>
+        </el-main>
+      </el-container>
+    </el-container>
 
   </div>
 </template>
+<script>
+import sidebar from '~/components/backstage/sidebar'
+import topbar from '~/components/backstage/topbar'
+export default {
+  components: {
+    sidebar,
+    topbar
+  }
+}
+</script>
+
 <style>
 html,
 body,
@@ -18,7 +38,19 @@ body,
   margin: 0;
   padding: 0;
 }
-
+.el-container {
+  height: 100%;
+}
+.el-aside {
+  text-align: center;
+}
+.el-main {
+  background-color: #ebeef5;
+  padding: 20px;
+}
+#sidebar {
+  background-color: #202838;
+}
 .shangfu {
   font-size: 12px;
 }
