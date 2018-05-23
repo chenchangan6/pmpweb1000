@@ -8,7 +8,7 @@
 <script>
 import Login from '~/components/backstage/Login.vue'
 export default {
-  layout: 'backstage/default',
+  layout: 'backstage/login',
   components: {
     Login
   }
