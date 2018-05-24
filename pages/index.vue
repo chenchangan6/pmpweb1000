@@ -40,6 +40,14 @@ export default {
         {
           name: '后台管理首页',
           link: 'backstage/'
+        },
+        {
+          name: '题目管理首页',
+          link: 'backstage/exercises'
+        },
+        {
+          name: '添加题目首页',
+          link: '/backstage/exercises/addexercises'
         }
       ]
     }
