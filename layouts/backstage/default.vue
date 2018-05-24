@@ -6,10 +6,10 @@
         <sidebar></sidebar>
       </el-aside>
       <el-container>
-        <el-header style="width:1260px;border-right:solid 1px #ebeef5">
+        <el-header >
           <topbar></topbar>
         </el-header>
-        <el-main style="width:1260px;">
+        <el-main >
           <nuxt/>
         </el-main>
       </el-container>
@@ -46,7 +46,7 @@ body,
 }
 .el-main {
   background-color: #ebeef5;
-  padding: 20px;
+  padding: 0;
 }
 #sidebar {
   background-color: #202838;
