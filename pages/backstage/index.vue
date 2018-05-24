@@ -1,8 +1,12 @@
 <template>
-  <div>
+  <div style="margin:20px 0 0 20px;">
     <!-- 新增统计 -->
-    <el-row :gutter="32">
-      <el-col :span="6"
+    <el-row :gutter="20">
+      <el-col :xs="24"
+              :sm="12"
+              :md="8"
+              :lg="6"
+              :xl="4"
               v-for="box in statistics"
               :key=box.countname>
         <sumandnewbox :linkto=box.linkto
@@ -19,7 +23,11 @@
       <el-col :span="24">
         <div class="title2">待办事项</div>
       </el-col>
-      <el-col :span="6"
+      <el-col :xs="24"
+              :sm="12"
+              :md="8"
+              :lg="6"
+              :xl="4"
               v-for="list in blocklog"
               :key=list.blocklogname>
         <backlog :linkto=list.linkto
@@ -28,25 +36,41 @@
       </el-col>
     </el-row>
     <!-- 趋势图表 -->
-    <el-row :gutter="58">
-      <el-col :span="12">
+    <el-row>
+      <el-col :xs="24"
+              :sm="12"
+              :md="8" 
+              :lg="8"
+              :xl="6">
         <div class="chars">
           <charlsline id="1"></charlsline>
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :xs="24"
+              :sm="12"
+              :md="8" offset="4" 
+              :lg="8" 
+              :xl="6">
         <div class="chars">
           <charlsline2 id="2"></charlsline2>
         </div>
       </el-col>
     </el-row>
-    <el-row :gutter="58">
-      <el-col :span="12">
+    <el-row>
+      <el-col :xs="24"
+              :sm="12"
+              :md="12"
+              :lg="8" 
+              :xl="6">
         <div class="chars">
           <charlsline2 id="3"></charlsline2>
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :xs="24"
+              :sm="12"
+              :md="8" offset="4"
+              :lg="8"
+              :xl="6">
         <div class="chars">
           <charlsline id="4"></charlsline>
         </div>
@@ -134,7 +158,7 @@ export default {
 }
 </script>
 <style scoped>
-.chars{
+.chars {
   background: white;
   width: 580px;
   height: 340px;
