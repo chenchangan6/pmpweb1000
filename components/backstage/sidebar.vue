@@ -9,7 +9,7 @@
     <div id="sidebarmenu">
       <ul>
         <li v-for="menu in sidebarmenus">
-          <nuxt-link to="/backstage/">
+          <nuxt-link :to="menu.linkto">
             <i :class="menu.icons">&nbsp;&nbsp;&nbsp;&nbsp;{{menu.name}}</i>
           </nuxt-link>
         </li>
@@ -27,22 +27,27 @@ export default {
     return {
       sidebarmenus: [
         {
+          linkto: '/backstage/',
           icons: 'el-icon-menu',
           name: '首页'
         },
         {
+          linkto: '/backstage/',
           icons: 'el-icon-menu',
           name: '用户管理'
         },
         {
+          linkto: '/backstage/exercises',
           icons: 'el-icon-news',
           name: '题目管理'
         },
         {
+          linkto: '/backstage/',
           icons: 'el-icon-news',
           name: '试卷管理'
         },
         {
+          linkto: '/backstage/',
           icons: 'el-icon-news',
           name: '机构管理'
         }
