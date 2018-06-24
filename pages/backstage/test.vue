@@ -3,7 +3,7 @@
     <el-header height="30px">
       <!-- 面包屑导航 -->
       <el-breadcrumb separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item :to="{ path: '/backstage/exercises' }">题目管理</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/' }">题目管理</el-breadcrumb-item>
         <el-breadcrumb-item>添加题目</el-breadcrumb-item>
       </el-breadcrumb>
     </el-header>

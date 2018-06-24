@@ -48,6 +48,10 @@ export default {
         {
           name: '添加题目首页',
           link: '/backstage/exercises/addexercises'
+        },
+        {
+          name: '测试首页',
+          link: '/backstage/test'
         }
       ]
     }
